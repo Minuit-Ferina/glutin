@@ -9,6 +9,9 @@ members = [
     "glutin_wgl_sys",
 ]
 
+[workspace.dependencies]
+winit = { version = "=0.31.0-beta.4", git = "https://github.com/Minuit-Ferina/winit", rev = "4a86bef75c12523283ec06134b5de15a563a009b", default-features = false }
+
 [workspace.package]
 # MSRV. Also update in ci.yml
 rust-version = "1.86.0"
